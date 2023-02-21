@@ -1,0 +1,19 @@
+server:
+  port: 8088
+spring:
+  cloud:
+    nacos:
+      discovery:
+        namespace: cece1d6d-6e1c-44e0-9ef4-a11a9d56cc53 # 命名空间id
+        ephemeral: true # 设置为非临时实例
+    gateway:
+      routes:
+        - id: user-service
+          uri: lb://user1-service
+          predicates:
+            - Path=/user/**
+
+        - id: order-service
+          uri: lb://order1-service
+          predicates:
+            - Path=/order/**
