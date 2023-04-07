@@ -46,7 +46,6 @@ public class Demo {
         resultWrapper.setCode("200");
         resultWrapper.setData(sites);
         resultWrapper.setMessage("自定义返回格式");
-
         return resultWrapper;
     }
 }

@@ -12,7 +12,7 @@ spring:
           uri: lb://user1-service
           predicates:
             - Path=/user/**
-            
+
         - id: order-service
           uri: lb://order1-service
           predicates:

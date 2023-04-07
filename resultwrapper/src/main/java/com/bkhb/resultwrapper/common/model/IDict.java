@@ -14,8 +14,6 @@ import java.util.stream.Stream;
  * <p>
  * 自定义的字典枚举类实现本接口后可省略属性code和text，以及对应的get方法
  * 在构造方法中只需调用init方法即可初始化
- *
- * @author 波哥
  */
 public interface IDict<T> {
     /**

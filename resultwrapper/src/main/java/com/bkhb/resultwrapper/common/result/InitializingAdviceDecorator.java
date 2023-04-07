@@ -36,7 +36,7 @@ public class InitializingAdviceDecorator implements InitializingBean {
         //因为上面返回的是unmodifiableList，所以需要新建list处理
         assert returnValueHandlers != null;
         List<HandlerMethodReturnValueHandler> handlers = new ArrayList<>(returnValueHandlers);
-        this.decorateHandlers(handlers); // 对 对应的 handler 做装饰增强
+        this.decorateHandlers(handlers); // 对应的 handler 做装饰增强
         //将增强的返回值回写回去
         adapter.setReturnValueHandlers(handlers);
     }

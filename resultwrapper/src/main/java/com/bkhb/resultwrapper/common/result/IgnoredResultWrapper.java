@@ -4,7 +4,7 @@ package com.bkhb.resultwrapper.common.result;
 import java.lang.annotation.*;
 
 /**
- * @author liao
+ * 不装饰controller相应
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
